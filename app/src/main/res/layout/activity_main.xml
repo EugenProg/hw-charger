@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="118dp"
+        android:background="@drawable/main_rectangle"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/H_32_Semi_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="44dp"
+                android:layout_marginTop="50dp"
+                android:text="@string/my_vehicle"
+                android:textColor="@color/text_color" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="44dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/box_background">
+
+                <TextView
+                    android:id="@+id/top_title"
+                    style="@style/H_20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="27dp"
+                    android:layout_marginTop="22dp"
+                    android:text="@string/audi_e_tron_sportback"
+                    android:textColor="@color/title_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/battery_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="26dp"
+                    android:src="@drawable/ic_battery"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/top_title" />
+
+                <TextView
+                    style="@style/H_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="262"
+                    android:textAllCaps="true"
+                    android:textColor="@color/title_color"
+                    app:layout_constraintBottom_toTopOf="@+id/textView"
+                    app:layout_constraintStart_toEndOf="@id/battery_view" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    style="@style/H_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:paddingBottom="8dp"
+                    android:text="@string/kilometre_left"
+                    android:textAllCaps="true"
+                    android:textColor="@color/title_color"
+                    app:layout_constraintBottom_toBottomOf="@+id/battery_view"
+                    app:layout_constraintStart_toEndOf="@id/battery_view"
+                    app:layout_constraintTop_toBottomOf="@+id/battery_view" />
+
+                <ImageView
+                    android:id="@+id/speed_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginBottom="53dp"
+                    android:src="@drawable/ic_round_speed"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/battery_view" />
+
+                <TextView
+                    style="@style/H_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="35%"
+                    android:textAllCaps="true"
+                    android:textColor="@color/title_color"
+                    app:layout_constraintBottom_toTopOf="@+id/textView1"
+                    app:layout_constraintStart_toEndOf="@id/speed_view" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    style="@style/H_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/charged"
+                    android:textAllCaps="true"
+                    android:textColor="@color/title_color"
+                    app:layout_constraintBottom_toBottomOf="@+id/speed_view"
+                    app:layout_constraintStart_toEndOf="@id/speed_view"
+                    app:layout_constraintTop_toBottomOf="@+id/speed_view" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_audi"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.75" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                style="@style/H_32_Semi_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="44dp"
+                android:layout_marginTop="41dp"
+                android:text="@string/nearby_chargers"
+                android:textColor="@color/text_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="44dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/netherlands_amesterdam"
+                android:textColor="@color/title_color" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="28dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/box_background">
+
+                <ImageView
+                    android:id="@+id/station_1_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:src="@drawable/station_1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/station_1_title"
+                    style="@style/H_20"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="26dp"
+                    android:text="@string/chargepoint_station_1"
+                    android:textColor="@color/title_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/station_1_image"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/station_1_address"
+                    style="@style/H_12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/street_pulo_25"
+                    android:textAllCaps="true"
+                    android:textColor="@color/title_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/station_1_image"
+                    app:layout_constraintTop_toBottomOf="@+id/station_1_title" />
+
+                <TextView
+                    android:id="@+id/station_1_city"
+                    style="@style/H_12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/amesterdam_netherlands"
+                    android:textColor="@color/title_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/station_1_image"
+                    app:layout_constraintTop_toBottomOf="@+id/station_1_address" />
+
+                <TextView
+                    android:id="@+id/station_1_status"
+                    style="@style/H_14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginBottom="21dp"
+                    android:text="@string/_8_ports_available"
+                    android:textColor="#A680FA"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/station_1_image"
+                    app:layout_constraintTop_toBottomOf="@+id/station_1_city" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="28dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/box_background"
+                android:minHeight="134dp">
+
+                <ImageView
+                    android:id="@+id/station_2_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:src="@drawable/station_2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/station_2_title"
+                    style="@style/H_20"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="26dp"
+                    android:text="@string/chargepoint_station_2"
+                    android:textColor="@color/title_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/station_2_image"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/station_2_address"
+                    style="@style/H_12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/street_srna_74"
+                    android:textAllCaps="true"
+                    android:textColor="@color/title_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/station_2_image"
+                    app:layout_constraintTop_toBottomOf="@+id/station_2_title" />
+
+                <TextView
+                    android:id="@+id/station_2_city"
+                    style="@style/H_12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/amesterdam_netherlands"
+                    android:textColor="@color/title_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/station_2_image"
+                    app:layout_constraintTop_toBottomOf="@+id/station_2_address" />
+
+                <TextView
+                    android:id="@+id/station_2_status"
+                    style="@style/H_14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginBottom="21dp"
+                    android:text="@string/_2_ports_available"
+                    android:textColor="#F5CA31"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/station_2_image"
+                    app:layout_constraintTop_toBottomOf="@+id/station_2_city" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="28dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="53dp"
+                android:background="@drawable/box_background"
+                android:minHeight="134dp">
+
+                <ImageView
+                    android:id="@+id/station_3_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:src="@drawable/station_3"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/station_3_title"
+                    style="@style/H_20"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="26dp"
+                    android:text="@string/chargepoint_station_3"
+                    android:textColor="@color/title_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/station_3_image"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/station_3_address"
+                    style="@style/H_12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/street_adas_123_123"
+                    android:textAllCaps="true"
+                    android:textColor="@color/title_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/station_3_image"
+                    app:layout_constraintTop_toBottomOf="@+id/station_3_title" />
+
+                <TextView
+                    android:id="@+id/station_3_city"
+                    style="@style/H_12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/amesterdam_netherlands"
+                    android:textColor="@color/title_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/station_3_image"
+                    app:layout_constraintTop_toBottomOf="@+id/station_3_address" />
+
+                <TextView
+                    android:id="@+id/station_3_status"
+                    style="@style/H_14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginBottom="21dp"
+                    android:text="@string/_5_ports_available"
+                    android:textColor="#A680FA"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/station_3_image"
+                    app:layout_constraintTop_toBottomOf="@+id/station_3_city" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <ImageView
+        android:layout_width="76dp"
+        android:layout_height="7dp"
+        android:src="@drawable/main_rectangle"
+        app:layout_constraintEnd_toEndOf="@+id/user_menu"
+        app:layout_constraintStart_toStartOf="@+id/user_menu"
+        app:layout_constraintTop_toBottomOf="@id/scroll"
+        app:tint="#8E63EE" />
+
+    <ImageView
+        android:id="@+id/user_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_menu_user"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/map_menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scroll" />
+
+    <ImageView
+        android:id="@+id/map_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_menu_map"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/energy_menu"
+        app:layout_constraintStart_toEndOf="@id/user_menu"
+        app:layout_constraintTop_toBottomOf="@+id/scroll" />
+
+    <ImageView
+        android:id="@+id/energy_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_menu_energy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/settings_menu"
+        app:layout_constraintStart_toEndOf="@id/map_menu"
+        app:layout_constraintTop_toBottomOf="@+id/scroll" />
+
+    <ImageView
+        android:id="@+id/settings_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="45"
+        android:src="@drawable/ic_menu_setting"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/energy_menu"
+        app:layout_constraintTop_toBottomOf="@+id/scroll" />
+
+    <ImageView
+        android:id="@+id/mini_setting"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:src="@drawable/ic_menu_setting"
+        app:layout_constraintEnd_toEndOf="@+id/settings_menu"
+        app:layout_constraintTop_toTopOf="@+id/settings_menu" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Layouting</string>
+    <string name="my_vehicle">My vehicle</string>
+    <string name="nearby_chargers">Nearby Chargers</string>
+    <string name="audi_e_tron_sportback">Audi e-tron Sportback</string>
+    <string name="kilometre_left">kilometre left</string>
+    <string name="charged">charged</string>
+    <string name="netherlands_amesterdam">Netherlands, Amesterdam <font color="#8E63EE"><u>Change Location</u></font></string>
+    <string name="chargepoint_station_1">ChargePoint Station 1</string>
+    <string name="chargepoint_station_2">ChargePoint Station 2</string>
+    <string name="chargepoint_station_3">ChargePoint Station 3</string>
+    <string name="street_pulo_25">street pulo 25</string>
+    <string name="amesterdam_netherlands">Amesterdam, Netherlands</string>
+    <string name="_8_ports_available">8 ports available</string>
+    <string name="street_srna_74">street srna 74</string>
+    <string name="street_adas_123_123">street adas 123 123</string>
+    <string name="_5_ports_available">5 ports available</string>
+    <string name="_2_ports_available">2 ports available</string>
+</resources>
